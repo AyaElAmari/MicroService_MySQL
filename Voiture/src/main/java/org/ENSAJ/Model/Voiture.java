@@ -6,7 +6,7 @@ import org.ENSAJ.Client;
 
 import javax.persistence.*;
 
-@Table(name="voitures")
+
 @Entity
 @Data @AllArgsConstructor @NoArgsConstructor
 public class Voiture {
@@ -19,6 +19,7 @@ public class Voiture {
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "id_client")
     private Client client;
+
 
 
 
